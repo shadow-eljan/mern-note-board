@@ -5,12 +5,14 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 const app = express();
-const PORT = 5000;
 
 connectDB();
 
+//middleware 
+app.use(express.json());
+
 app.use("/api/notes", notesRoutes);
 
-app.listen(PORT, () => {
-    console.log("Server active on port:", PORT)
+app.listen(process.env.PORT, () => {
+    console.log("Server active on port:", process.env.PORT)
 });
