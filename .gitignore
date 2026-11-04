@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Build and deployment output
+dist/
+dist-ssr/
+.vercel/
+.render/
+coverage/
+
+# Logs and temporary files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tmp
+*.temp
+
+# Local tooling and operating-system files
+.cache/
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+
+# Keep package.json and package-lock.json files tracked.
